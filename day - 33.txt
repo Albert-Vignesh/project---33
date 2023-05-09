@@ -1,0 +1,179 @@
+DESIGN ZEN CLASS PROGRAMME;
+
+USERS;
+
+myzenclassprogramme> db.users.find();
+[
+  {
+    _id: ObjectId("6459d758f74fa88df6e76333"),
+    name: 'G.Vignesh',
+    mobileNumber: '7868042409',
+    email: 'gk.vigneshdas996@gmail.com',
+    city: 'Acharapakkam'
+  }
+]
+
+CODEKATA;
+myzenclassprogramme> db.codekata.find().pretty();
+[
+  {
+    _id: ObjectId("6459dbf0f74fa88df6e76334"),
+    date: '01/10/2022',
+    day: 'saturday',
+    time: '2pm'
+  },
+  {
+    _id: ObjectId("6459dd6df74fa88df6e76335"),
+    date: '07/10/2022',
+    day: 'friday',
+    time: '2pm'
+  },
+  {
+    _id: ObjectId("6459dd6df74fa88df6e76336"),
+    date: '08/10/2022',
+    day: 'saturday',
+    time: '2pm'
+  }
+]
+
+ATTENDANCE;
+myzenclassprogramme> db.attendance.find().pretty();
+[
+  {
+    _id: ObjectId("6459e04af74fa88df6e76337"),
+    day: '1',
+    class: 'What is XML request?',
+    totalmMembers: '40',
+    presentMember: '35',
+    absentMember: '5'
+  },
+  {
+    _id: ObjectId("6459e2d8f74fa88df6e76338"),
+    day: '2',
+    class: 'Request & response cycle',
+    totalmMembers: '40',
+    presentMember: '38',
+    absentMember: '2'
+  },
+  {
+    _id: ObjectId("6459e2d8f74fa88df6e76339"),
+    day: '3',
+    class: 'JS array & object',
+    totalmMembers: '40',
+    presentMember: '40',
+    absentMember: '0'
+  },
+  {
+    _id: ObjectId("6459e2d8f74fa88df6e7633a"),
+    day: '4',
+    class: 'Introduction to browser & web',
+    totalmMembers: '40',
+    presentMember: '30',
+    absentMember: '10'
+  }
+]
+
+TOPICS;
+myzenclassprogramme> db.topics.find().pretty();
+[
+  {
+    _id: ObjectId("6459ed3ef74fa88df6e76348"),
+    day: '1',
+    topics: 'What is XML request?'
+  },
+  { _id: ObjectId("6459eda0f74fa88df6e76349"), day: '2' },
+  {
+    _id: ObjectId("6459eef2f74fa88df6e7634a"),
+    day: '2',
+    topics: 'Request & response cycle'
+  },
+  {
+    _id: ObjectId("6459eef2f74fa88df6e7634b"),
+    day: '3',
+    topics: 'JS array & object'
+  },
+  {
+    _id: ObjectId("6459eef2f74fa88df6e7634c"),
+    day: '4',
+    topics: 'Introduction to browser & web'
+  }
+]
+
+TASKS;
+myzenclassprogramme> db.tasks.find().pretty();
+[
+  {
+    _id: ObjectId("6459ec34f74fa88df6e76344"),
+    day: '1',
+    tasks: 'Difference between http & http 1.1'
+  },
+  {
+    _id: ObjectId("6459ec5cf74fa88df6e76345"),
+    day: '2',
+    tasks: 'Difference between document & window object'
+  },
+  {
+    _id: ObjectId("6459ec5cf74fa88df6e76346"),
+    day: '3',
+    tasks: 'JSON ilterate for over all loops'
+  },
+  {
+    _id: ObjectId("6459ec5cf74fa88df6e76347"),
+    day: '4',
+    tasks: 'JSON format'
+  }
+]
+
+
+Find all the topics and tasks
+TASKS;
+myzenclassprogramme> db.tasks.find().pretty();
+[
+  {
+    _id: ObjectId("6459ec34f74fa88df6e76344"),
+    day: '1',
+    tasks: 'Difference between http & http 1.1'
+  },
+  {
+    _id: ObjectId("6459ec5cf74fa88df6e76345"),
+    day: '2',
+    tasks: 'Difference between document & window object'
+  },
+  {
+    _id: ObjectId("6459ec5cf74fa88df6e76346"),
+    day: '3',
+    tasks: 'JSON ilterate for over all loops'
+  },
+  {
+    _id: ObjectId("6459ec5cf74fa88df6e76347"),
+    day: '4',
+    tasks: 'JSON format'
+  }
+]
+
+myzenclassprogramme> db.topics.find().pretty();
+[
+  {
+    _id: ObjectId("6459ed3ef74fa88df6e76348"),
+    day: '1',
+    topics: 'What is XML request?'
+  },
+  { _id: ObjectId("6459eda0f74fa88df6e76349"), day: '2' },
+  {
+    _id: ObjectId("6459eef2f74fa88df6e7634a"),
+    day: '2',
+    topics: 'Request & response cycle'
+  },
+  {
+    _id: ObjectId("6459eef2f74fa88df6e7634b"),
+    day: '3',
+    topics: 'JS array & object'
+  },
+  {
+    _id: ObjectId("6459eef2f74fa88df6e7634c"),
+    day: '4',
+    topics: 'Introduction to browser & web'
+  }
+]
+
+
